@@ -102,3 +102,44 @@ Do not refactor unrelated code.
 Do not add dependencies without explaining why they are needed.
 
 Prefer using existing project conventions.
+
+
+
+
+--------------------------- Sample of prompt ****
+
+
+@architect
+Analyze the current architecture of this solution.
+Do not modify code.
+Identify:
+- project structure
+- dependencies
+- authentication
+- database access
+- messaging
+- architectural risks
+
+---------------------------
+
+@senior-dev
+Implement the approved solution.
+Keep changes minimal.
+Run dotnet build and dotnet test.
+
+---
+
+@senior-dev
+
+Analyze this slow EF Core query.
+Use @ef-core-performance.
+
+---------------------------
+
+@reviewer
+Review the changes independently.
+Do not modify files.
+Focus on correctness, security, concurrency and regressions.
+
+---------------------------
+
