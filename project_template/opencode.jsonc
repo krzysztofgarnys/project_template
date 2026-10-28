@@ -1,0 +1,53 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "permissions": [
+    {
+      "action": "shell",
+      "resource": "*",
+      "effect": "ask"
+    },
+
+    {
+      "action": "shell",
+      "resource": "git status *",
+      "effect": "allow"
+    },
+
+    {
+      "action": "shell",
+      "resource": "git diff *",
+      "effect": "allow"
+    },
+
+    {
+      "action": "shell",
+      "resource": "dotnet build *",
+      "effect": "allow"
+    },
+
+    {
+      "action": "shell",
+      "resource": "dotnet test *",
+      "effect": "allow"
+    },
+
+    {
+      "action": "shell",
+      "resource": "git push *",
+      "effect": "deny"
+    },
+
+    {
+      "action": "shell",
+      "resource": "git commit *",
+      "effect": "deny"
+    },
+
+    {
+      "action": "external_directory",
+      "resource": "*",
+      "effect": "ask"
+    }
+  ]
+}
